@@ -1,17 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: none;
   }
-  
   .nav-container {
 	  position: absolute;
 	  color: white;
 	  top: 0;
 	  left: 0;
 	  z-index: 10;
-      height: 100px;
-	  width: 100vw;
+    height: 100px;
+	  width: 100%; 
   }
   
   .nav {
@@ -63,38 +62,37 @@
     left: 50%;
     top: 60%;
   }
-  .first-section{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .first-section div:nth-child() {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 70px 90px;
-  }
-  .first-section .left-side:nth-child(1) {
-    font: normal normal 900 30px/normal sans-serif;
-    margin-bottom: 30px;
-  }
-  .first-section .left-side p{
-    font: normal normal 500 15px/normal sans-serif;
-    margin-bottom: 30px;
-  }
-  .first-section .left-side a{
-    font: normal normal 700 17px/normal sans-serif;
-    background: linear-gradient(to bottom, #fff 50%, hsl(51, 100%, 49%) 50%);
-    color: #000;
-    text-decoration: none;
-    width: max-content;
-    padding: 0 5px;
-  }
-  .first-section .right-side img{
-    width: 100%;
-    max-width: 100%;
-  }
-
+.first-section, .second-section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.first-section .left-side, .second-section .right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 160px;
+  row-gap: 30px;
+}
+.first-section .left-side h2, .second-section .right-side h2{
+  font: normal normal 900 30px/normal sans-serif;
+}
+.first-section .left-side p, .second-section .right-side p{
+  font: normal normal 500 15px/25px sans-serif;
+}
+.first-section .left-side a, .second-section .right-side a{
+  font: normal normal 700 17px/normal sans-serif;
+  background: linear-gradient(#fff 50%, yellow 50%);
+  text-decoration: none;
+  width: max-content;
+  padding: 0 5px;
+  color: #000;
+}
+.second-section .right-side a{
+  background: linear-gradient(#fff 50%, pink 50%);
+}
+.first-section .right-side img, .second-section .left-side img{
+  width: 100%;
+}
   .testimonials {
 	  padding: 80px;
   }
