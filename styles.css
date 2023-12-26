@@ -5,8 +5,13 @@
   }
   
   .nav-container {
-      border: 1px solid red;
+	  position: absolute;
+	  color: white;
+	  top: 0;
+	  left: 0;
+	  z-index: 10;
       height: 100px;
+	  width: 100vw;
   }
   
   .nav {
@@ -29,10 +34,11 @@
   }
   
   li:nth-child(4) {
-      background-color: white;
       padding: 15px 25px;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 40px;
+	  color: black;
+	  background: white;
   }
 
   .banner{
@@ -61,14 +67,14 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .first-section .left-side{
+  .first-section div:nth-child() {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     padding: 70px 90px;
   }
-  .first-section .left-side h2{
+  .first-section .left-side:nth-child(1) {
     font: normal normal 900 30px/normal sans-serif;
     margin-bottom: 30px;
   }
@@ -87,4 +93,52 @@
   .first-section .right-side img{
     width: 100%;
     max-width: 100%;
+  }
+
+  .testimonials {
+	  padding: 80px;
+  }
+
+  .testimonial-container {
+	  display: grid;
+	  gap: 20px;
+	  grid-template-columns: auto auto auto;
+  }
+
+  .testimonial-heading {
+	  font-family: sans-serif;
+	  text-transform: uppercase;
+	  color: hsl(210, 4%, 67%);
+	  width: max-content;
+	  padding: 60px;
+	  margin: auto;
+  }
+
+  .testimonial-card {
+	  text-align: center;
+  }
+
+  .testimonial-card figcaption > *{
+	  margin-bottom: 40px;
+  }
+
+
+  .desgination {
+	  color: hsl(213, 9%, 39%);
+	  margin-top: 20px;
+	  font-weight: 500;
+  }
+
+  .description {
+	  color: hsl(213, 9%, 39%);
+	  font-weight: 700;
+  }
+
+  .testimonial-card img {
+	  display: block;
+	  border-radius: 100%;
+	  width: 60px;
+	  height: 60px;
+	  margin: auto;
+	  margin-bottom: 30px;
   }
