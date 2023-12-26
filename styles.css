@@ -57,3 +57,34 @@
     left: 50%;
     top: 60%;
   }
+  .first-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .first-section .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 70px 90px;
+  }
+  .first-section .left-side h2{
+    font: normal normal 900 30px/normal sans-serif;
+    margin-bottom: 30px;
+  }
+  .first-section .left-side p{
+    font: normal normal 500 15px/normal sans-serif;
+    margin-bottom: 30px;
+  }
+  .first-section .left-side a{
+    font: normal normal 700 17px/normal sans-serif;
+    background: linear-gradient(to bottom, #fff 50%, hsl(51, 100%, 49%) 50%);
+    color: #000;
+    text-decoration: none;
+    width: max-content;
+    padding: 0 5px;
+  }
+  .first-section .right-side img{
+    width: 100%;
+    max-width: 100%;
+  }
